@@ -1,0 +1,227 @@
+*{
+	font-family: "Arial";
+}
+
+body{
+	margin: 0;
+}
+
+
+header{
+
+	background: url('../images/header.png') no-repeat;
+	background-size: cover;
+	#logo{
+		width: 250px;
+
+	}
+	div{
+		display: inline-block;
+	}
+	ul{
+		li{
+			display: inline-block;
+			list-style: none;
+			color: white;
+			padding: 15px 35px;
+			width: 100px;
+			vertical-align: text-top;
+		}
+	}
+}
+
+
+.wrapper{
+	// width: 1366px;
+	text-align: center;
+}
+.slider{
+	min-height: 400px;
+	max-height: 500px;
+}
+
+
+.product{
+	height: 600px;
+
+	.afisha{
+		height: 200px;
+border-bottom: 4px solid;
+margin: 39px;
+border-color: #124da1;
+}
+	}
+
+
+ .icons{
+	 background: #4892d4;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+		color: white;
+		align-items: flex-start;
+		padding: 35px;
+
+		.icon{
+			img{
+				width: 110px;
+			}
+		}
+ }
+
+
+ footer{
+	 background: #333333;
+	 #logo{
+		 width: 250px;
+
+	 }
+	 footer .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+		div{
+			    margin: 15px 89px;
+		}
+}
+	 div{
+		 display: inline-block;
+	 }
+	 .footer-nav{
+	 ul{
+		 display: inline-block;
+		 li{
+			 // display: inline-block;
+			 list-style: none;
+			 color: white;
+			 // padding: 15px 35px;
+			 // width: 100px;
+			 // vertical-align: text-top;
+		 }
+	 }
+ }
+ .contacts{
+	 color:white;
+	 text-align: left;
+ }
+}
+
+
+/* Базовый контейнер табов */
+.tabs {
+	min-width: 320px;
+	max-width: 90%;
+	padding: 0px;
+	margin: 0 auto;
+}
+/* Стили секций с содержанием */
+.tabs>section {
+	display: none;
+	padding: 15px;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+.tabs>section>p {
+	margin: 0 0 5px;
+	line-height: 1.5;
+	color: #383838;
+	/* прикрутим анимацию */
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/* Прячем чекбоксы */
+.tabs>input {
+	display: none;
+	position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs>label {
+	display: inline-block;
+	margin: 0px -6px -2px 0px;
+	padding: 15px 25px;
+	font-weight: 600;
+	text-align: center;
+	color: #aaa;
+	border: 0px solid #ddd;
+	border-width: 1px 1px 1px 1px;
+	background: #f1f1f1;
+	border-radius: 3px 3px 0 0;
+}
+/* Шрифт-иконки от Font Awesome в формате Unicode */
+.tabs>label:before {
+	font-family: fontawesome;
+	font-weight: normal;
+	margin-right: 10px;
+}
+// .tabs>label[for*="1"]:before {
+// 	content: "\f19a";
+// }
+// .tabs>label[for*="2"]:before {
+// 	content: "\f17a";
+// }
+// .tabs>label[for*="3"]:before {
+// 	content: "\f13b";
+// }
+// .tabs>label[for*="4"]:before {
+// 	content: "\f13c";
+// }
+/* Изменения стиля переключателей вкладок при наведении */
+
+.tabs>label:hover {
+	color: #124da1;
+	cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs>input:checked+label {
+	color: #fff;
+	border-top: 1px solid #009933;
+	border-bottom: 1px solid #fff;
+	background: #124da1;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+	display: block;
+}
+/* Убираем текст с переключателей
+* и оставляем иконки на малых экранах
+*/
+
+@media screen and (max-width: 680px) {
+	.tabs>label {
+		font-size: 0;
+	}
+	.tabs>label:before {
+		margin: 0;
+		font-size: 18px;
+	}
+}
+/* Изменяем внутренние отступы
+*  переключателей для малых экранов
+*/
+@media screen and (max-width: 400px) {
+	.tabs>label {
+		padding: 15px;
+	}
+}
