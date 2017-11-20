@@ -1,9 +1,31 @@
+@font-face {
+font-family: "Gothic";
+src: url("../fonts/gothic.ttf") format("truetype");
+font-style: normal;
+font-weight: normal;
+ }
+ @font-face {
+ font-family: "Gothic";
+ src: url("../fonts/gothicb.ttf") format("truetype");
+ font-style: bold;
+ font-weight: bold;
+  }
+
 *{
-	font-family: "Arial";
+	font-family: "Gothic";
+}
+
+html{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+		background: url('../images/seamless-pattern.jpg');
 }
 
 body{
 	margin: 0;
+	width: 1366px;
+	background: white;
 }
 
 
@@ -23,9 +45,9 @@ header{
 			display: inline-block;
 			list-style: none;
 			color: white;
-			padding: 15px 35px;
-			width: 100px;
-			vertical-align: text-top;
+			padding: 15px 22px;
+			/* width: 100px; */
+			vertical-align: middle;
 		}
 	}
 }
@@ -36,21 +58,60 @@ header{
 	text-align: center;
 }
 .slider{
-	min-height: 400px;
-	max-height: 500px;
+	min-height: 330px;
+	max-height: 338px;
+	margin: 0px 88px;
+	.slide{
+		background: url('../images/banner.png');
+		height: 340px;
+		    text-align: -webkit-right;
+		.slider-text{
+			width: 350px;
+	   	// position: absolute;
+	    text-align: center;
+			margin-right: 150px;
+    	padding-top: 40px;
+			color: #124da1;
+		}
+	}
 }
 
 
 .product{
-	height: 600px;
+	// height: 600px;
 
 	.afisha{
-		height: 200px;
-border-bottom: 4px solid;
-margin: 39px;
+		// height: 200px;
+border-top: 4px solid;
+margin: 68px;
 border-color: #124da1;
+min-width: 320px;
+max-width: 90%;
+h2{
+	color: #124da1;
+	text-align: center;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.items{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	padding: 30px 15px;
+	.item{
+		width: 143px;
+    height: 217px;
+		p{
+			position: absolute;
+			display: none;
+    width: 143px;
+    height: 217px;
+		}
+	}
+}
 }
 	}
+
 
 
  .icons{
@@ -76,20 +137,26 @@ border-color: #124da1;
 		 width: 250px;
 
 	 }
-	 footer .wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+	 .wrapper {
+		 display: flex;
+     justify-content: space-around;
+     align-items: center;
 		div{
-			    margin: 15px 89px;
+			    // margin: 15px 89px;
 		}
 }
 	 div{
 		 display: inline-block;
 	 }
 	 .footer-nav{
+		 text-align: left;
+		 h4{
+			 color: #124da1;
+		 }
 	 ul{
 		 display: inline-block;
+		 padding: 0;
+		 margin: 0;
 		 li{
 			 // display: inline-block;
 			 list-style: none;
@@ -103,6 +170,18 @@ border-color: #124da1;
  .contacts{
 	 color:white;
 	 text-align: left;
+	 border-left: solid 1px;
+    padding-left: 34px;
+    margin: 30px;
+		h4{
+			color: #124da1;
+		}
+		p{
+			img{
+				width: 35px;
+				margin: -10px 15px;
+			}
+		}
  }
 }
 
@@ -112,14 +191,14 @@ border-color: #124da1;
 	min-width: 320px;
 	max-width: 90%;
 	padding: 0px;
-	margin: 0 auto;
+	margin: -31px auto 2px;
 }
 /* Стили секций с содержанием */
 .tabs>section {
 	display: none;
 	padding: 15px;
 	background: #fff;
-	border: 1px solid #ddd;
+	// border: 1px solid #ddd;
 }
 .tabs>section>p {
 	margin: 0 0 5px;
@@ -160,14 +239,14 @@ border-color: #124da1;
 .tabs>label {
 	display: inline-block;
 	margin: 0px -6px -2px 0px;
-	padding: 15px 25px;
+	padding: 6px 25px;
 	font-weight: 600;
 	text-align: center;
 	color: #aaa;
 	border: 0px solid #ddd;
 	border-width: 1px 1px 1px 1px;
 	background: #f1f1f1;
-	border-radius: 3px 3px 0 0;
+	border-radius: 13px 13px 0 0;
 }
 /* Шрифт-иконки от Font Awesome в формате Unicode */
 .tabs>label:before {
@@ -196,7 +275,7 @@ border-color: #124da1;
 /* Стили для активной вкладки */
 .tabs>input:checked+label {
 	color: #fff;
-	border-top: 1px solid #009933;
+	border-top: 1px solid #124da1;
 	border-bottom: 1px solid #fff;
 	background: #124da1;
 }
@@ -224,4 +303,73 @@ border-color: #124da1;
 	.tabs>label {
 		padding: 15px;
 	}
+}
+
+
+
+.tab-content{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	.items{
+		width: 300px;
+		date{
+			color: #124da1;
+			text-decoration: underline;
+		}
+		img{
+			width: 300px;
+			border-radius: 20px;
+		}
+		.title{
+			text-align: center;
+			color: #124da1;
+		}
+	}
+}
+
+
+
+.parthers{
+	background: #4892d4;
+    // display: flex;
+    // justify-content: space-evenly;
+    //align-items: center;
+    color: white;
+    // align-items: flex-start;
+    padding: 35px;
+		// height: 160px;
+		display: flex;
+		align-items: center;
+		// .triangle-wrap{
+		// 	display: flex;
+// 		.triangle{
+// 			background:red;
+// width:250px;
+// heigth:300px;
+// border-radius:0px 15px 0px 15px;
+// background: url(https://goo.gl/BeSyyD);
+//
+// 	/* The points are: centered top, left bottom, right bottom */
+// 	clip-path: polygon(100% 0, 0 100%, 100% 100%);
+// 	&:nth-child(odd){
+// 		clip-path: polygon(0% 0, 0 100%, 100% 0%);
+// 	}
+// 		}
+	// }
+	.cont{
+		margin: 0px 15px;
+	}
+		.info{
+			background: url('../images/form.png');
+			height: 214px;
+			width: 439px;
+			margin-left: 105px;
+			p{
+				padding: 48px;
+    		color: blue;
+    		text-align: center;
+			}
+		}
 }

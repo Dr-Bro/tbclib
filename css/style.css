@@ -1,8 +1,28 @@
+@font-face {
+  font-family: "Gothic";
+  src: url("../fonts/gothic.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Gothic";
+  src: url("../fonts/gothicb.ttf") format("truetype");
+  font-style: bold;
+  font-weight: bold;
+}
 * {
-  font-family: "Arial";
+  font-family: "Gothic";
+}
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url('../images/seamless-pattern.jpg');
 }
 body {
   margin: 0;
+  width: 1366px;
+  background: white;
 }
 header {
   background: url('../images/header.png') no-repeat;
@@ -18,25 +38,58 @@ header ul li {
   display: inline-block;
   list-style: none;
   color: white;
-  padding: 15px 35px;
-  width: 100px;
-  vertical-align: text-top;
+  padding: 15px 22px;
+  /* width: 100px; */
+  vertical-align: middle;
 }
 .wrapper {
   text-align: center;
 }
 .slider {
-  min-height: 400px;
-  max-height: 500px;
+  min-height: 330px;
+  max-height: 338px;
+  margin: 0px 88px;
 }
-.product {
-  height: 600px;
+.slider .slide {
+  background: url('../images/banner.png');
+  height: 340px;
+  text-align: -webkit-right;
+}
+.slider .slide .slider-text {
+  width: 350px;
+  text-align: center;
+  margin-right: 150px;
+  padding-top: 40px;
+  color: #124da1;
 }
 .product .afisha {
-  height: 200px;
-  border-bottom: 4px solid;
-  margin: 39px;
+  border-top: 4px solid;
+  margin: 68px;
   border-color: #124da1;
+  min-width: 320px;
+  max-width: 90%;
+}
+.product .afisha h2 {
+  color: #124da1;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.product .afisha .items {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 30px 15px;
+}
+.product .afisha .items .item {
+  width: 143px;
+  height: 217px;
+}
+.product .afisha .items .item p {
+  position: absolute;
+  display: none;
+  width: 143px;
+  height: 217px;
 }
 .icons {
   background: #4892d4;
@@ -56,19 +109,24 @@ footer {
 footer #logo {
   width: 250px;
 }
-footer footer .wrapper {
+footer .wrapper {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-}
-footer footer .wrapper div {
-  margin: 15px 89px;
+  justify-content: space-around;
+  align-items: center;
 }
 footer div {
   display: inline-block;
 }
+footer .footer-nav {
+  text-align: left;
+}
+footer .footer-nav h4 {
+  color: #124da1;
+}
 footer .footer-nav ul {
   display: inline-block;
+  padding: 0;
+  margin: 0;
 }
 footer .footer-nav ul li {
   list-style: none;
@@ -77,20 +135,29 @@ footer .footer-nav ul li {
 footer .contacts {
   color: white;
   text-align: left;
+  border-left: solid 1px;
+  padding-left: 34px;
+  margin: 30px;
+}
+footer .contacts h4 {
+  color: #124da1;
+}
+footer .contacts p img {
+  width: 35px;
+  margin: -10px 15px;
 }
 /* Базовый контейнер табов */
 .tabs {
   min-width: 320px;
-  max-width: 800px;
+  max-width: 90%;
   padding: 0px;
-  margin: 0 auto;
+  margin: -31px auto 2px;
 }
 /* Стили секций с содержанием */
 .tabs > section {
   display: none;
   padding: 15px;
   background: #fff;
-  border: 1px solid #ddd;
 }
 .tabs > section > p {
   margin: 0 0 5px;
@@ -130,14 +197,14 @@ footer .contacts {
 .tabs > label {
   display: inline-block;
   margin: 0px -6px -2px 0px;
-  padding: 15px 25px;
+  padding: 6px 25px;
   font-weight: 600;
   text-align: center;
   color: #aaa;
   border: 0px solid #ddd;
   border-width: 1px 1px 1px 1px;
   background: #f1f1f1;
-  border-radius: 3px 3px 0 0;
+  border-radius: 13px 13px 0 0;
 }
 /* Шрифт-иконки от Font Awesome в формате Unicode */
 .tabs > label:before {
@@ -147,13 +214,13 @@ footer .contacts {
 }
 /* Изменения стиля переключателей вкладок при наведении */
 .tabs > label:hover {
-  color: #fff;
+  color: #124da1;
   cursor: pointer;
 }
 /* Стили для активной вкладки */
 .tabs > input:checked + label {
   color: #fff;
-  border-top: 1px solid #009933;
+  border-top: 1px solid #124da1;
   border-bottom: 1px solid #fff;
   background: #124da1;
 }
@@ -183,4 +250,46 @@ footer .contacts {
   .tabs > label {
     padding: 15px;
   }
+}
+.tab-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.tab-content .items {
+  width: 300px;
+}
+.tab-content .items date {
+  color: #124da1;
+  text-decoration: underline;
+}
+.tab-content .items img {
+  width: 300px;
+  border-radius: 20px;
+}
+.tab-content .items .title {
+  text-align: center;
+  color: #124da1;
+}
+.parthers {
+  background: #4892d4;
+  color: white;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+}
+.parthers .cont {
+  margin: 0px 15px;
+}
+.parthers .info {
+  background: url('../images/form.png');
+  height: 214px;
+  width: 439px;
+  margin-left: 105px;
+}
+.parthers .info p {
+  padding: 48px;
+  color: blue;
+  text-align: center;
 }

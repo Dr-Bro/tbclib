@@ -2,20 +2,22 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=1366px">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<title>Document</title>
 </head>
 <body>
 	<header>
 		<div class="wrapper">
-			<div class="logo-wrapper">
-				<img src="images/logo.png" id="logo">
-			</div>
 
 			<div class="nav-wrapper">
+				<!-- <div class="logo-wrapper">
+					<img src="images/logo.png" id="logo">
+				</div> -->
 
 				<nav>
 					<ul>
+						<li><img src="images/logo.png" id="logo"></li>
 						<li>Главная</li>
 						<li>О системе</li>
 						<li>Информационные ресурсы</li>
@@ -34,7 +36,10 @@
 		<section>
 		<div class="slider">
 			<div class="slide">
+							<div class="slider-text">
+								<h2>Ваш шедевр готов!</h2>
 							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus aliquam aliquid excepturi corporis, pariatur, neque quia. Ut atque similique nemo modi eaque quibusdam, ad deserunt suscipit debitis vitae. Soluta beatae vitae natus consectetur quis vero accusamus nemo dolorem nobis, minus velit delectus. Tempora facilis incidunt in commodi veritatis totam repellat.
+						</div>
 					</div>
 		</div>
 		</section>
@@ -78,9 +83,23 @@
     <label for="tab2" title="События">События</label>
 
     <section id="content-tab1">
-        <p>
-		Здесь размещаете любое содержание....
-        </p>
+        <div class="tab-content">
+					<div class="items">
+						<p class="date">3 ноября 2017 в 16:00</p>
+						<img src="images/grandmother.png" alt="">
+						<p class="title">Празничная программа "Бенефис Бабушек"</p>
+					</div>
+        	<div class="items">
+        		<p class="date">3 ноября 2017 в 16:00</p>
+						<img src="images/event.png" alt="">
+						<p class="title">Презентация книги Александра Саплина "Небо"</p>
+        	</div>
+        	<div class="items">
+        		<p class="date">3 ноября 2017 в 16:00</p>
+						<img src="images/event2.png" alt="">
+						<p class="title">Лекция "Витебск Марка Шагала"</p>
+        	</div>
+        </div>
     </section>
     <section id="content-tab2">
         <p>
@@ -89,16 +108,58 @@
     </section>
 </div>
 			<div class="afisha">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed sit aut voluptates consequatur ad, eligendi tenetur nihil eum possimus perspiciatis vel hic, impedit non enim.
-			</div>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti iusto, ipsam aliquid perspiciatis vitae ex possimus culpa ab cumque veritatis qui amet explicabo a. Blanditiis modi obcaecati dignissimos vel facere aliquid voluptatibus sint numquam voluptatem enim! Perferendis ut maxime esse eaque, assumenda cum eligendi cupiditate, doloribus numquam ullam fugit in accusamus, inventore vel iste earum.
-			<div class="events">
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi impedit, maxime inventore dolorum culpa adipisci nulla ab a laudantium quos?
+				<h2>Книжные новинки</h2>
+				<div class="items">
+					<div class="item">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, est.</p>
+						<img src="images/book1.png" alt="">
+					</div>
+					<div class="item">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, est.</p>
+						<img src="images/book2.png" alt="">
+					</div>
+					<div class="item">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, est.</p>
+						<img src="images/book1.png" alt="">
+					</div>
+					<div class="item">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, est.</p>
+						<img src="images/book2.png" alt="">
+					</div>
+					<div class="item">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, est.</p>
+						<img src="images/book1.png" alt="">
+					</div>
+					<div class="item">
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, est.</p>
+						<img src="images/book2.png" alt="">
+					</div>
+					</div>
 			</div>
 		</div>
 
 		<section>
+			<div class="parthers">
+				<div class="cont">
+					<img src="images/g1.png" alt="">
+			</div>
+				<div class="cont">
+					<img src="images/g1.png" alt="">
+			</div>
+				<div class="cont">
+					<img src="images/g1.png" alt="">
+			</div>
+				<div class="cont">
+					<img src="images/g1.png" alt="">
+			</div>
+				<div class="info">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum odio qui placeat nam nostrum unde voluptas laboriosam aspernatur, impedit provident beatae non illo eligendi vel?
+					</p>
 
+				</div>
+
+			</div>
 		</section>
 
 	</main>
@@ -110,8 +171,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi impedit, maxime 
 			</div>
 
 			<div class="footer-nav">
-
-				<nav>
+					<h4>Информация</h4>
 					<ul>
 						<li>О системе</li>
 						<li>Online сервисы</li>
@@ -128,13 +188,13 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi impedit, maxime 
 						<li>Проекты</li>
 						<li>Услуги</li>
 					</ul>
-				</nav>
 			</div>
 
 			<div class="contacts">
-				<p>300041, г. Тула, Краснормейский пр. д.1</p>
-				<p>тел./факс: 55-42-66</p>
-				<p>почтовый ящик</p>
+				<h4>Контактная информация</h4>
+				<p><img src="images/adress.png" alt="">300041, г. Тула, Краснормейский пр. д.1</p>
+				<p><img src="images/phone.png" alt="">тел./факс: 55-42-66</p>
+				<p><img src="images/email.png" alt="">почтовый ящик</p>
 				<a href="">Задайте вопрос</a>
 			</div>
 		</div>
