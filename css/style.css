@@ -17,7 +17,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url('../images/seamless-pattern.jpg');
+  background: #dedede;
 }
 body {
   margin: 0;
@@ -51,16 +51,27 @@ header ul li {
   margin: 0px 88px;
 }
 .slider .slide {
-  background: url('../images/banner.png');
+  background: url('../images/banner.png') no-repeat;
   height: 340px;
   text-align: -webkit-right;
 }
 .slider .slide .slider-text {
   width: 350px;
   text-align: center;
-  margin-right: 150px;
+  margin-right: 250px;
   padding-top: 40px;
   color: #124da1;
+}
+.bx-wrapper {
+  border: none !important;
+  margin-bottom: 0 !important;
+}
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+  position: absolute;
+  bottom: 10px !important;
+  width: auto !important;
+  right: 313px;
 }
 .product .afisha {
   border-top: 4px solid;
@@ -146,6 +157,26 @@ footer .contacts p img {
   width: 35px;
   margin: -10px 15px;
 }
+footer .contacts a {
+  text-decoration: none;
+  background: white;
+  padding: 6px 40px 6px 0px;
+  margin-left: 17px;
+  border-radius: 7px;
+}
+footer .contacts a span {
+  background: #124da1;
+  color: white;
+  padding: 8px;
+  border-radius: 7px;
+  margin-right: 25px;
+}
+footer .copyright {
+  text-align: center;
+  background: white;
+  width: 100%;
+  padding: 10px 0px;
+}
 /* Базовый контейнер табов */
 .tabs {
   min-width: 320px;
@@ -157,7 +188,6 @@ footer .contacts p img {
 .tabs > section {
   display: none;
   padding: 15px;
-  background: #fff;
 }
 .tabs > section > p {
   margin: 0 0 5px;
@@ -197,14 +227,15 @@ footer .contacts p img {
 .tabs > label {
   display: inline-block;
   margin: 0px -6px -2px 0px;
-  padding: 6px 25px;
-  font-weight: 600;
+  padding: 5px 25px;
+  /* font-weight: 600; */
   text-align: center;
   color: #aaa;
   border: 0px solid #ddd;
-  border-width: 1px 1px 1px 1px;
+  /* border-width: 1px 1px 1px 1px; */
   background: #f1f1f1;
   border-radius: 13px 13px 0 0;
+  width: 100px;
 }
 /* Шрифт-иконки от Font Awesome в формате Unicode */
 .tabs > label:before {
@@ -290,6 +321,6 @@ footer .contacts p img {
 }
 .parthers .info p {
   padding: 48px;
-  color: blue;
+  color: #114ca0;
   text-align: center;
 }
