@@ -10,7 +10,7 @@
 	<script src="js/slider.js"></script>
 	<link rel="stylesheet" href="css/jquery.bxslider.css">
   <script src="js/jquery.bxslider.min.js"></script>
-	<title>Document</title>
+	<title>Тульская Библиотечная Система</title>
 </head>
 <body class="">
 	<header>
@@ -22,14 +22,20 @@
 				</div> -->
 
 				<nav>
+					<img src="images/logo.png" id="logo">
 					<ul>
-						<li><img src="images/logo.png" id="logo"></li>
 						<li>Главная</li>
-						<li>О системе</li>
-						<li>Информационные ресурсы</li>
-						<li>Online сервисы</li>
-						<li>Мероприятия</li>
-						<li>СМИ о нас</li>
+						<li><a href="[[~2]]">О системе</a></li>
+						<li><a href="[[~3]]">Информационные ресурсы</a>
+							<ul class="dropdown">
+							<li><a href="[[~4]]">Online сервисы</a></li>
+							<li><a href="[[~5]]">Мероприятия</a></li>
+							<li><a href="[[~6]]">СМИ о нас</a></li>
+						</ul>
+					</li>
+						<li><a href="[[~4]]">Online сервисы</a></li>
+						<li><a href="[[~5]]">Мероприятия</a></li>
+						<li><a href="[[~6]]">СМИ о нас</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -66,8 +72,10 @@
 			<div class="wrapper">
 				<div class="wrap icons ">
 					<div class="icon">
-						<img src="images/library.png" alt="">
-						<p>Наши <br> библиотеки </p>
+						<a href="[[~2]]">
+							<img src="images/library.png" alt="">
+							<p>Наши <br> библиотеки </p>
+							</a>
 					</div>
 					<div class="icon">
 						<img src="images/services.png" alt="">
@@ -189,6 +197,7 @@
 		<div class="wrapper">
 			<div class="logo-wrapper">
 				<img src="images/logo.png" id="logo">
+
 			</div>
 
 			<div class="footer-nav">
@@ -201,7 +210,7 @@
 						<li>Коллегам</li>
 						<li>Наши друзья</li>
 					</ul>
-					<ul>
+					<ul style="margin-left: 70px;">
 						<li>Наши библиотеки</li>
 						<li>Электронный каталог</li>
 						<li>Виртуальная справка</li>
@@ -220,7 +229,7 @@
 			</div>
 		</div>
 		<div class="copyright">
-			2017 Тульская библиотечная система
+			© 2017 Тульская библиотечная система
 		</div>
 	</footer>
 
